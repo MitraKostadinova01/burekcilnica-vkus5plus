@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import imagesss from "../../../public/images/beginings.png";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about-container">
       <section className="hero-section">
