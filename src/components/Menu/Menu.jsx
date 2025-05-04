@@ -135,7 +135,7 @@ const Menu = () => {
               <li key={idx} className="menu-item">
                 <div className="item-image">
                   {/* <img src={item.image} alt={item.name} loading="lazy" /> */}
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.image} alt={item.name} loading="eager" />
                 </div>
                 <div className="item-content">
                   <div className="item-header">

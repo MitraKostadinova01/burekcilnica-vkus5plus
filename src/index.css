@@ -5,11 +5,7 @@ body {
   font-weight: 400;
   margin: 0px;
 }
-/* @media (max-width: 768px) {
-  body {
-    margin: 12px;
-  }
-} */
+
 h1 {
   font-weight: 800;
 }
