@@ -1,0 +1,49 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Footer.css";
+
+import covece from "./../../../public/transparentno-chovece.png";
+import instaLogo from "./../../../public/instagram.png";
+import fbLogo from "./../../../public/facebook.png";
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-logo-section">
+          <img src={covece} />
+          <NavLink to="/" className="footer-logo">
+            БУРЕКЧИЛНИЦА ВКУС 5+
+          </NavLink>
+        </div>
+
+        <div className="footer-contact">
+          <h4 className="contact-title">Контактирајте не</h4>
+          <p>ул. Слободан Митров Данко бр.95</p>
+          <p>Гевгелија, Република Северна Македонија</p>
+          <p>Телефон: 071 625 012</p>
+          <div className="social-icons">
+            <a href="https://www.instagram.com/burekcilnica_vkus5plus/">
+              <img alt="Insta Logo" src={instaLogo} />
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100063766620097">
+              <img alt="FB Logo" src={fbLogo} />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <p>
+          <strong>
+            © БУРЕКЧИЛНИЦА ВКУС 5+ Гевгелија, Maj 2025 <br /> Сите права се
+            задржани
+          </strong>
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

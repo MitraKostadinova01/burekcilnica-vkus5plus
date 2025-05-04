@@ -1,0 +1,124 @@
+.navbar {
+  background: #d8cab2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6b4226; /* Rich coffee-brown for contrast */
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item {
+  color: #6b4226;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-item:hover {
+  color: #fff8e1;
+}
+
+.nav-item.active {
+  color: linear-gradient(rgba(220, 203, 179, 0.9), rgba(220, 203, 179, 0.8));
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    background-color: #f8f5f1;
+  }
+}
+
+.nav-logo {
+  font-size: 1.5rem; /* Default size */
+  white-space: nowrap;
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+  .nav-logo {
+    font-size: 1.1rem;
+    max-width: 180px;
+  }
+}
