@@ -157,3 +157,16 @@
     margin: auto;
   }
 }
+
+/* Add to Menu.css */
+.item-image {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform-style: preserve-3d;
+}
+
+.item-image img {
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+}
