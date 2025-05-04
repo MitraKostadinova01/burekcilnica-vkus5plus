@@ -1,27 +1,6 @@
 import React from "react";
 import "./Menu.css";
 
-import burekMeso from "./../../../public/burekm.png";
-import picaSendv from "./../../../public/picasendv.png";
-import vrtena from "./../../../public/vrtena.png";
-import sirenjak from "./../../../public/sirenjak.png";
-import picaparce from "./../../../public/picaparc.png";
-import krofni from "./../../../public/krofni1.png";
-import tost from "./../../../public/tost2.png";
-import banici from "./../../../public/miks-banici.png";
-import voda from "./../../../public/voda-izvorska.png";
-import drinks from "./../../../public/drinks.png";
-import jogurt from "./../../../public/jogutt500ml.png";
-import jogchaskaBuc from "./../../../public/jogurt-180.png";
-import jogchaskaKorab from "./../../../public/jogurtkorab.png";
-import panceroti from "./../../../public/panceroti.png";
-import pastrm from "./../../../public/pastrmajlii.png";
-import picab from "./../../../public/picab.png";
-import posno from "./../../../public/posno.png";
-import burekSir from "./../../../public/sirenje.png";
-import fsirenjak from "./../../../public/fsirenjak.png";
-import fpica from "./../../../public/fpica.png";
-
 const Menu = () => {
   const menuItems = [
     {
@@ -30,27 +9,27 @@ const Menu = () => {
         {
           name: "Бурек со месо",
           desc: "",
-          image: burekMeso,
+          image: "/images/burekm.png",
         },
         {
           name: "Бурек со сирење",
           desc: "",
-          image: burekSir,
+          image: "/images/sirenje.png",
         },
         {
           name: "Пица бурек",
           desc: "",
-          image: picab,
+          image: "/images/picab.png",
         },
         {
           name: "Вртена баница со спанаќ и сирење",
           desc: "",
-          image: vrtena,
+          image: "/images/vrtena.png",
         },
         {
           name: "Вртена баница со спанаќ",
           desc: "ПОСНО",
-          image: posno,
+          image: "/images/posno.png",
         },
       ],
     },
@@ -60,37 +39,37 @@ const Menu = () => {
         {
           name: "Пица Парче",
           desc: "шунка, кашкавал, печурки, доматно пире",
-          image: picaparce,
+          image: "/images/picaparc.png",
         },
         {
           name: "Сирењак парче",
           desc: "сирење, пиперка, домат, маслинки, кашкавал",
-          image: sirenjak,
+          image: "/images/sirenjak.png",
         },
         {
           name: "Панцерота",
           desc: "шунка, кашкавал, печурки, доматно пире",
-          image: panceroti,
+          image: "/images/panceroti.png",
         },
         {
           name: "Пилешка пастрмајлија",
           desc: "пилешки стек, мајонез, кашкавал",
-          image: pastrm,
+          image: "/images/pastrmajlii.png",
         },
         {
           name: "Тост",
           desc: "шунка, кашкавал",
-          image: tost,
+          image: "/images/tost2.png",
         },
         {
           name: "Пица сендвич",
           desc: "шунка, кашкавал, доматно пире, печурки",
-          image: picaSendv,
+          image: "/images/picasendv.png",
         },
         {
           name: "Крофни",
           desc: "чоколадни, мармалад",
-          image: krofni,
+          image: "/images/krofni1.png",
         },
       ],
     },
@@ -100,27 +79,27 @@ const Menu = () => {
         {
           name: "Јогурт 0.180 мл",
           desc: "Кораб",
-          image: jogchaskaKorab,
+          image: "/images/jogurtkorab.png",
         },
         {
           name: "Јогурт 0.180 мл",
           desc: "Бучен Козјак",
-          image: jogchaskaBuc,
+          image: "/images/jogurt-180.png",
         },
         {
           name: "Јогурт 500 мл",
           desc: "Бучен Козјак",
-          image: jogurt,
+          image: "/images/jogutt500ml.png",
         },
         {
           name: "Сок",
           desc: "кока-кола, фанта, швепс",
-          image: drinks,
+          image: "/images/drinks.png",
         },
         {
           name: "Негазирана Вода",
           desc: "",
-          image: voda,
+          image: "/images/voda-izvorska.png",
         },
       ],
     },
@@ -130,17 +109,17 @@ const Menu = () => {
         {
           name: "Вртена баница",
           desc: "месо/сирење/пица/спанаќ/сирење и спанаќ",
-          image: banici,
+          image: "/images/miks-banici.png",
         },
         {
           name: "Фамилијарна пица",
           desc: "шунка, кашкавал, печурки, доматно пире / 6 големи правоаголни парчиња / 18 помали парчиња",
-          image: fpica,
+          image: "/images/fpica.png",
         },
         {
           name: "Фамилијарен сирењак",
           desc: "сирење, пиперка, домат, маслинки, кашкавал / 6 големи правоаголни парчиња / 18 помали парчиња",
-          image: fsirenjak,
+          image: "/images/fsirenjak.png",
         },
       ],
     },

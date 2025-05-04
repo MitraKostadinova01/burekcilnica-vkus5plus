@@ -2,9 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
-import covece from "./../../../public/transparentno-chovece.png";
-import instaLogo from "./../../../public/instagram.png";
-import fbLogo from "./../../../public/facebook.png";
+import covece from "./../../../public/images/transparentno-chovece.png";
+import instaLogo from "./../../../public/images/instagram.png";
+import fbLogo from "./../../../public/images/facebook.png";
 
 const Footer = () => {
   return (
