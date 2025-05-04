@@ -134,7 +134,8 @@ const Menu = () => {
             {section.items.map((item, idx) => (
               <li key={idx} className="menu-item">
                 <div className="item-image">
-                  <img src={item.image} alt={item.name} loading="lazy" />
+                  {/* <img src={item.image} alt={item.name} loading="lazy" /> */}
+                  <img src={item.image} alt={item.name} />
                 </div>
                 <div className="item-content">
                   <div className="item-header">
@@ -148,7 +149,6 @@ const Menu = () => {
                       <span className="item-price">{item.price}</span>
                     )}
                   </div>
-                  {/* {item.desc && <p className="item-desc">{item.desc}</p>} */}
                   {item.desc && item.desc.includes("ПОСНО") ? (
                     <p className="item-desc-tag">{item.desc}</p>
                   ) : (
