@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Menu.css";
 
 const Menu = () => {
@@ -124,6 +124,10 @@ const Menu = () => {
       ],
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="menu-container">
