@@ -27,7 +27,8 @@
 .hero-title {
   font-size: 2.8rem;
   color: #4a3f35;
-  margin-bottom: 1rem;
+  margin: 1rem;
+  margin-top: 2.5rem;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
@@ -106,7 +107,7 @@
 }
 
 .location-section {
-  padding: 2rem 0;
+  padding: 8rem 0rem 2rem;
 }
 
 .map-container {
@@ -130,7 +131,7 @@
 
 @media (max-width: 768px) {
   .map-container {
-    height: 400px;
+    height: 600px;
   }
 }
 
@@ -141,8 +142,8 @@
 
   .history-section {
     grid-template-columns: 1fr;
-    padding: 2rem 0;
-    gap: 0;
+    /* padding: 2rem 0; */
+    /* gap: 0; */
   }
 
   .text-content {
@@ -159,5 +160,23 @@
 
   .vintage-photo {
     width: 100%;
+  }
+}
+
+.section-title.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  .small-text {
+    font-size: 13px;
+    background-color: #f8f5f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
   }
 }

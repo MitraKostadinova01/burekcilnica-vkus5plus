@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./About.css";
 import imagesss from "../../../public/images/beginings.png";
+import ImageCarousel from "./../ImageCarousel/ImageCarousel.jsx";
 
 const About = () => {
   useEffect(() => {
@@ -10,11 +11,16 @@ const About = () => {
     <div className="about-container">
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">Нашата приказна</h1>
-          <p className="hero-subtitle">за традиционален бурек и пецива</p>
+          <h1 className="hero-title">Нашата единствена продавница</h1>
+          <p className="hero-subtitle">
+            за традиционално вкусен бурек и пецива
+          </p>
+          <p className="hero-subtitle">
+            ул. Слободан Митров Данко, бр. 95 Гевгелија
+          </p>
         </div>
       </section>
-
+      <br /> <br />
       <div className="about-content">
         <section className="history-section">
           <div className="text-content">
@@ -29,7 +35,7 @@ const About = () => {
               тепсија раскажува занает месен, размесуван и секојдневно
               обликуван.
               <br />
-              Кај нас ништо не е набрзина - секоја кора се влече прецизно и
+              Кај нас, ништо не е набрзина - секоја кора се влече прецизно и
               рачно, секој фил се подготвува со внимание, секоја тепсија се
               обликува и пече со душа, секоја печка мириса на дома, секое залаче
               е полн со свежина и крцкавост. Овој квалитет не е случаен - тоа е
@@ -53,7 +59,15 @@ const About = () => {
             />
           </div>
         </section>
-
+        <br />
+        <h2 className="section-title test">
+          <span> Неколку препораки</span>
+          <small className="small-text">
+            кликни на објавата и заследи нè на инстаграм
+          </small>
+        </h2>
+        <ImageCarousel />
+        <br /> <br />
         <section className="values-section">
           <h2 className="section-title">Нашите вредности</h2>
           <div className="values-grid">
@@ -79,22 +93,7 @@ const About = () => {
             </div>
           </div>
         </section>
-
-        <section className="location-section">
-          <h2 className="section-title">
-            Нашата Локација - ул. Слободан Митров Данко, бр. 95 Гевгелија
-          </h2>
-          <div className="map-container">
-            <iframe
-              title="Burekcilnica VKUS 5+ Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.147977922642!2d22.5035439!3d41.1434188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1356255b19c2702d%3A0x4f2a6bc5c006b91b!2sBurekcilnica%20VKUS%205%2B!5e0!3m2!1sen!2smk!4v1717270486152!5m2!1sen!2smk"
-              className="map-iframe"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </section>
+        <br />
       </div>
     </div>
   );

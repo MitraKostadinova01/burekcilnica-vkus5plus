@@ -1,9 +1,39 @@
+.announcement-bar {
+  background-color: #f8f5f1;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 6px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1100; /* Higher than navbar */
+}
+
+.scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+  font-weight: bold;
+  color: #4a3f35;
+  font-size: 1rem;
+  margin: 0px 0px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .navbar {
+  top: 26px; /* Adjust based on announcement bar height */
   background: #d8cab2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
-  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -44,8 +74,9 @@
 }
 
 .nav-item.active {
-  color: linear-gradient(rgba(220, 203, 179, 0.9), rgba(220, 203, 179, 0.8));
+  color: #4a3f35; /* Use a solid contrasting color */
   font-weight: bold;
+  border-bottom: 2px solid #6b4226; /* Optional: visual indicator */
 }
 
 .hamburger {
@@ -95,11 +126,13 @@
     transition: 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
+    top: 100px;
   }
 
   .nav-menu.active {
     left: 0;
     background-color: #f8f5f1;
+    top: 100px;
   }
 }
 
