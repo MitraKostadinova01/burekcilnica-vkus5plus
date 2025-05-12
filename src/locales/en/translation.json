@@ -1,0 +1,141 @@
+{
+  "navbar": {
+    "shop_name": "BUREKCILNICA VKUS 5+",
+    "products": "Products",
+    "about": "About Us",
+    "location": "Our Location"
+  },
+  "announcement": "Working hours: MONDAY - SATURDAY from 06:00 to 14:00, phone number: 071 625 012",
+  "menu": {
+    "categories": {
+      "burek": "BUREK",
+      "specialties": "Other Specialties",
+      "drinks": "Drinks",
+      "custom_orders": "Custom Orders"
+    },
+    "items": {
+      "burek": {
+        "meat": { "name": "Meat Burek", "desc": "" },
+        "cheese": { "name": "Cheese Burek", "desc": "" },
+        "pizza": { "name": "Pizza Burek", "desc": "" },
+        "spinach_cheese": { "name": "Spinach & Cheese Roll", "desc": "" },
+        "spinach": { "name": "Spinach Roll", "desc": "" }
+      },
+      "specialties": {
+        "pizza_slice": {
+          "name": "Pizza Slice",
+          "desc": "Ham, cheese, mushrooms, tomato sauce"
+        },
+        "cheese_pie": {
+          "name": "Cheese Pie / Sirenjak",
+          "desc": "Cheese, peppers, tomatoes, olives"
+        },
+        "panzerotti": {
+          "name": "Panzerotti",
+          "desc": "Ham, cheese, mushrooms, tomato sauce"
+        },
+        "chicken_pastrmajlija": {
+          "name": "Chicken Pastrmajlija",
+          "desc": "Chicken steak, mayo, cheese"
+        },
+        "toast": { "name": "Toast", "desc": "Ham and cheese" },
+        "pizza_sandwich": {
+          "name": "Pizza Sandwich",
+          "desc": "Ham, cheese, tomato sauce, mushrooms"
+        },
+        "donuts": { "name": "Donuts", "desc": "Chocolate, marmalade" }
+      },
+      "drinks": {
+        "yogurt_korab": { "name": "Yogurt 0.180ml", "desc": "Korab brand" },
+        "yogurt_kozyak_small": {
+          "name": "Yogurt 0.180ml",
+          "desc": "Buchen Kozyak"
+        },
+        "yogurt_kozyak_large": {
+          "name": "Yogurt 500ml",
+          "desc": "Buchen Kozyak"
+        },
+        "juices": { "name": "Juices", "desc": "Coca-Cola, Fanta, Schweppes" },
+        "water": { "name": "Still Water", "desc": "" }
+      },
+      "custom": {
+        "rolled_pie": {
+          "name": "Rolled Pie",
+          "desc": "Meat/cheese/pizza/spinach/cheese & spinach"
+        },
+        "family_pizza": {
+          "name": "Family Pizza",
+          "desc": "Ham, cheese, mushrooms, tomato sauce - 6 large or 18 small pieces"
+        },
+        "family_cheese_pie": {
+          "name": "Family Cheese Pie / Sirenjak",
+          "desc": "Cheese, peppers, tomatoes, olives - 6 large or 18 small pieces"
+        }
+      }
+    },
+    "tags": {
+      "vegetarian": "VEGETARIAN"
+    }
+  },
+  "about": {
+    "heroTitle": "Our Unique Shop",
+    "heroSubtitle1": "for traditional delicious burek and pastries",
+    "address": "Slobodan Mitrov Danko St. No. 95, Gevgelija",
+    "history": {
+      "title": "From Family Burek Shop to Gevgelija's Favorite Spot",
+      "text": "Opened by masters with over 40 years of experience, VKUS 5+ is not just an ordinary burek shop - it's a story woven from tradition, decades of dedicated work, effort, and lots of dough. Since July 2020, in the midst of the global pandemic until today, every baking tray tells a craft story of kneading and daily shaping.<break/>With us, nothing is rushed - each layer is precisely hand-stretched, every filling prepared with care, each tray shaped and baked with soul, every oven smells like home, every bite full of freshness and crispness. This quality isn't accidental - it's decades of dedication, patience, and craftsmanship nurtured over time, proudly shared today with all who know what real good burek means. <break/>VKUS 5+ isn't just a place to eat, but an experience that will awaken all your senses and prove that authentic taste still exists - you just need to find it in the right place, as locals say <emphasis><strong>You really are VKUS five plus!</strong></emphasis>",
+      "imageAlt": "Our humble beginnings"
+    },
+    "recommendations": {
+      "title": "Some Recommendations",
+      "subtext": "click the post and follow us on Instagram"
+    },
+    "values": {
+      "title": "Our Values",
+      "traditional": {
+        "title": "Traditional Recipes",
+        "description": "Recipes and methods refined and tested through years of our masters' experience"
+      },
+      "fresh": {
+        "title": "Fresh Local Ingredients",
+        "description": "Selected with great care, focusing on the Gevgelija region"
+      },
+      "love": {
+        "title": "Made with Love",
+        "description": "Every bite tells a story - come and taste for yourself!"
+      }
+    }
+  },
+  "footer": {
+    "logoAlt": "Character logo",
+    "businessName": "BUREKCILNICA VKUS 5+",
+    "contactTitle": "Contact us",
+    "address": {
+      "street": "Slobodan Mitrov Danko No. 95",
+      "city": "Gevgelija, Republic of North Macedonia"
+    },
+    "phone": "Phone: 071 625 012",
+    "social": {
+      "instaAlt": "Instagram logo",
+      "fbAlt": "Facebook logo"
+    },
+    "copyright": "© BUREKCILNICA VKUS 5+ Gevgelija, 2025 <br/> All rights reserved",
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  "location": {
+    "our_location": "Our location - street Slobodan Mitrov Danko No. 95, Gevgelija"
+  }
+}

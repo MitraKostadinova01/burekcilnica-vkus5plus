@@ -1,124 +1,128 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./Menu.css";
 
 const Menu = () => {
+  const { t } = useTranslation();
+
   const menuItems = [
     {
-      category: "БУРЕК",
+      category: "menu.categories.burek",
       items: [
         {
-          name: "Бурек со месо",
-          desc: "",
+          name: "menu.items.burek.meat.name",
+          desc: "menu.items.burek.meat.desc",
           image: "/images/burekm.png",
         },
         {
-          name: "Бурек со сирење",
-          desc: "",
+          name: "menu.items.burek.cheese.name",
+          desc: "menu.items.burek.cheese.desc",
           image: "/images/sirenje.png",
         },
         {
-          name: "Пица бурек",
-          desc: "",
+          name: "menu.items.burek.pizza.name",
+          desc: "menu.items.burek.pizza.desc",
           image: "/images/picab.png",
         },
         {
-          name: "Вртена баница со спанаќ и сирење",
-          desc: "",
+          name: "menu.items.burek.spinach_cheese.name",
+          desc: "menu.items.burek.spinach_cheese.desc",
           image: "/images/vrtena.png",
         },
         {
-          name: "Вртена баница со спанаќ",
-          desc: "ПОСНО",
+          name: "menu.items.burek.spinach.name",
+          desc: "menu.tags.vegetarian",
           image: "/images/posno.png",
+          veg: true,
         },
       ],
     },
     {
-      category: "Други специјалитети",
+      category: "menu.categories.specialties",
       items: [
         {
-          name: "Пица Парче",
-          desc: "шунка, кашкавал, печурки, доматно пире",
+          name: "menu.items.specialties.pizza_slice.name",
+          desc: "menu.items.specialties.pizza_slice.desc",
           image: "/images/picaparc.png",
         },
         {
-          name: "Сирењак парче",
-          desc: "сирење, пиперка, домат, маслинки, кашкавал",
+          name: "menu.items.specialties.cheese_pie.name",
+          desc: "menu.items.specialties.cheese_pie.desc",
           image: "/images/sirenjak.png",
         },
         {
-          name: "Панцерота",
-          desc: "шунка, кашкавал, печурки, доматно пире",
+          name: "menu.items.specialties.panzerotti.name",
+          desc: "menu.items.specialties.panzerotti.desc",
           image: "/images/panceroti.png",
         },
         {
-          name: "Пилешка пастрмајлија",
-          desc: "пилешки стек, мајонез, кашкавал",
+          name: "menu.items.specialties.chicken_pastrmajlija.name",
+          desc: "menu.items.specialties.chicken_pastrmajlija.desc",
           image: "/images/pastrmajlii.png",
         },
         {
-          name: "Тост",
-          desc: "шунка, кашкавал",
+          name: "menu.items.specialties.toast.name",
+          desc: "menu.items.specialties.toast.desc",
           image: "/images/tost2.png",
         },
         {
-          name: "Пица сендвич",
-          desc: "шунка, кашкавал, доматно пире, печурки",
+          name: "menu.items.specialties.pizza_sandwich.name",
+          desc: "menu.items.specialties.pizza_sandwich.desc",
           image: "/images/picasendv.png",
         },
         {
-          name: "Крофни",
-          desc: "чоколадни, мармалад",
+          name: "menu.items.specialties.donuts.name",
+          desc: "menu.items.specialties.donuts.desc",
           image: "/images/krofni1.png",
         },
       ],
     },
     {
-      category: "Пијалоци",
+      category: "menu.categories.drinks",
       items: [
         {
-          name: "Јогурт 0.180 мл",
-          desc: "Кораб",
+          name: "menu.items.drinks.yogurt_korab.name",
+          desc: "menu.items.drinks.yogurt_korab.desc",
           image: "/images/jogurtkorab.png",
         },
         {
-          name: "Јогурт 0.180 мл",
-          desc: "Бучен Козјак",
+          name: "menu.items.drinks.yogurt_kozyak_small.name",
+          desc: "menu.items.drinks.yogurt_kozyak_small.desc",
           image: "/images/jogurt-180.png",
         },
         {
-          name: "Јогурт 500 мл",
-          desc: "Бучен Козјак",
+          name: "menu.items.drinks.yogurt_kozyak_large.name",
+          desc: "menu.items.drinks.yogurt_kozyak_large.desc",
           image: "/images/jogutt500ml.png",
         },
         {
-          name: "Сок",
-          desc: "кока-кола, фанта, швепс",
+          name: "menu.items.drinks.juices.name",
+          desc: "menu.items.drinks.juices.desc",
           image: "/images/drinks.png",
         },
         {
-          name: "Негазирана Вода",
-          desc: "",
+          name: "menu.items.drinks.water.name",
+          desc: "menu.items.drinks.water.desc",
           image: "/images/voda-izvorska.png",
         },
       ],
     },
     {
-      category: "По нарачка - за прослави / родендени",
+      category: "menu.categories.custom_orders",
       items: [
         {
-          name: "Вртена баница",
-          desc: "месо/сирење/пица/спанаќ/сирење и спанаќ",
+          name: "menu.items.custom.rolled_pie.name",
+          desc: "menu.items.custom.rolled_pie.desc",
           image: "/images/miks-banici.png",
         },
         {
-          name: "Фамилијарна пица",
-          desc: "шунка, кашкавал, печурки, доматно пире / 6 големи правоаголни парчиња / 18 помали парчиња",
+          name: "menu.items.custom.family_pizza.name",
+          desc: "menu.items.custom.family_pizza.desc",
           image: "/images/fpica.png",
         },
         {
-          name: "Фамилијарен сирењак",
-          desc: "сирење, пиперка, домат, маслинки, кашкавал / 6 големи правоаголни парчиња / 18 помали парчиња",
+          name: "menu.items.custom.family_cheese_pie.name",
+          desc: "menu.items.custom.family_cheese_pie.desc",
           image: "/images/fsirenjak.png",
         },
       ],
@@ -133,31 +137,21 @@ const Menu = () => {
     <div className="menu-container">
       {menuItems.map((section, index) => (
         <section key={index} className="menu-section">
-          <h2 className="section-title">{section.category}</h2>
+          <h2 className="section-title">{t(section.category)}</h2>
           <ul className="menu-items">
             {section.items.map((item, idx) => (
               <li key={idx} className="menu-item">
                 <div className="item-image">
-                  {/* <img src={item.image} alt={item.name} loading="lazy" /> */}
-                  <img src={item.image} alt={item.name} loading="eager" />
+                  <img src={item.image} alt={t(item.name)} loading="eager" />
                 </div>
                 <div className="item-content">
                   <div className="item-header">
                     <h3 className="item-name">
-                      {item.name}
-                      {item.desc.includes("ПОСНО") && (
-                        <span className="veg-indicator">🌱</span>
-                      )}
+                      {t(item.name)}
+                      {item.veg && <span className="veg-indicator">🌱</span>}
                     </h3>
-                    {item.price && (
-                      <span className="item-price">{item.price}</span>
-                    )}
                   </div>
-                  {item.desc && item.desc.includes("ПОСНО") ? (
-                    <p className="item-desc-tag">{item.desc}</p>
-                  ) : (
-                    <p className="item-desc">{item.desc}</p>
-                  )}
+                  {item.desc && <p className="item-desc">{t(item.desc)}</p>}
                 </div>
               </li>
             ))}

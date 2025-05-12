@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation, Trans } from "react-i18next";
 import "./Footer.css";
 
 import covece from "./../../../public/images/transparentno-chovece.png";
@@ -7,55 +8,43 @@ import instaLogo from "./../../../public/images/instagram.png";
 import fbLogo from "./../../../public/images/facebook.png";
 
 const Footer = () => {
-  function getMacedonianMonthYear() {
+  const { t } = useTranslation();
+
+  function getLocalizedMonthYear() {
     const date = new Date();
-    const months = [
-      "Јануари",
-      "Февруари",
-      "Март",
-      "Април",
-      "Мај",
-      "Јуни",
-      "Јули",
-      "Август",
-      "Септември",
-      "Октомври",
-      "Ноември",
-      "Декември",
-    ];
-    const month = months[date.getMonth()];
-    const year = date.getFullYear();
-    return `${month} ${year}`;
+    const months = t("months", { returnObjects: true });
+    return `${months[date.getMonth()]} ${date.getFullYear()}`;
   }
 
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo-section">
-          <img src={covece} />
+          <img src={covece} alt={t("footer.logoAlt")} />
           <NavLink to="/" className="footer-logo">
-            БУРЕКЧИЛНИЦА ВКУС 5+
+            {t("footer.businessName")}
           </NavLink>
         </div>
 
         <div className="footer-contact">
-          <h4 className="contact-title">Контактирајте не</h4>
-          <p>ул. Слободан Митров Данко бр.95</p>
-          <p>Гевгелија, Република Северна Македонија</p>
-          <p>Телефон: 071 625 012</p>
+          <h4 className="contact-title">{t("footer.contactTitle")}</h4>
+          <p>{t("footer.address.street")}</p>
+          <p>{t("footer.address.city")}</p>
+          <p>{t("footer.phone")}</p>
           <div className="social-icons">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/burekcilnica_vkus5plus/"
             >
-              <img alt="Insta Logo" src={instaLogo} />
+              <img alt={t("footer.social.instaAlt")} src={instaLogo} />
             </a>
-
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.facebook.com/profile.php?id=100063766620097"
             >
-              <img alt="FB Logo" src={fbLogo} />
+              <img alt={t("footer.social.fbAlt")} src={fbLogo} />
             </a>
           </div>
         </div>
@@ -64,8 +53,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>
           <strong>
-            © БУРЕКЧИЛНИЦА ВКУС 5+ Гевгелија, {getMacedonianMonthYear()} <br />{" "}
-            Сите права се задржани
+            <Trans
+              i18nKey="footer.copyright"
+              values={{ date: getLocalizedMonthYear() }}
+              components={{ br: <br /> }}
+            />
           </strong>
         </p>
       </div>

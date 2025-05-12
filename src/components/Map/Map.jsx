@@ -1,14 +1,15 @@
 import React from "react";
 import "./../About/About.css";
+import { useTranslation } from "react-i18next";
 
 const Map = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="about-container">
       <div className="about-content">
         <section className="location-section">
-          <h2 className="section-title">
-            Нашата локација - ул. Слободан Митров Данко, бр. 95 Гевгелија
-          </h2>
+          <h2 className="section-title">{t("location.our_location")}</h2>
           <div className="map-container">
             <iframe
               title="Burekcilnica VKUS 5+ Location"

@@ -155,3 +155,36 @@
     max-width: 180px;
   }
 }
+
+/*  new */
+.location-language-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .location-language-group {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  /* Adjust language switcher buttons for mobile */
+  .language-switcher {
+    justify-content: center;
+  }
+
+  .language-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+/* Desktop hover effects */
+.nav-item:hover + .location-language-group .language-switcher,
+.location-language-group:hover .language-switcher {
+  opacity: 1;
+  visibility: visible;
+}

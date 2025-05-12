@@ -1,0 +1,32 @@
+/* LanguageSwitcher.css */
+.language-switcher {
+  background: none;
+  border: 1px solid #6b4226;
+  color: #6b4226;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.language-switcher:hover {
+  background-color: #6b4226;
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .language-switcher {
+    margin-left: 0;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  /* If inside mobile menu */
+  .nav-menu.active .language-switcher {
+    margin-top: 1rem;
+    align-self: center;
+  }
+}
