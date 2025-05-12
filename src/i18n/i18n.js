@@ -6,6 +6,10 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import translationMK from "../locales/mk/translation.json";
 import translationEN from "../locales/en/translation.json";
 
+if (!localStorage.getItem("i18nextLng")) {
+  localStorage.setItem("i18nextLng", "mk");
+}
+
 const resources = {
   mk: { translation: translationMK },
   en: { translation: translationEN },
@@ -16,16 +20,17 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: "mk", // Set Macedonian as default
+    fallbackLng: "mk", // Default language
+    supportedLngs: ["mk", "en"],
+
     detection: {
-      order: ["localStorage", "navigator"],
+      order: ["localStorage"],
       caches: ["localStorage"],
       lookupLocalStorage: "i18nextLng",
     },
     interpolation: {
       escapeValue: false,
     },
-    supportedLngs: ["mk", "en"], // List supported languages
   });
 
 export default i18n;
