@@ -16,10 +16,13 @@
     "items": {
       "burek": {
         "meat": { "name": "Meat Burek", "desc": "" },
-        "cheese": { "name": "Cheese Burek", "desc": "" },
+        "cheese": { "name": "White Cheese Burek", "desc": "" },
         "pizza": { "name": "Pizza Burek", "desc": "" },
-        "spinach_cheese": { "name": "Spinach & Cheese Roll", "desc": "" },
-        "spinach": { "name": "Spinach Roll", "desc": "" }
+        "spinach_cheese": {
+          "name": "Spinach & Cheese Roll / Banica",
+          "desc": ""
+        },
+        "spinach": { "name": "Spinach Roll / Banica", "desc": "" }
       },
       "specialties": {
         "pizza_slice": {
@@ -55,12 +58,12 @@
           "name": "Yogurt 500ml",
           "desc": "Buchen Kozyak"
         },
-        "juices": { "name": "Juices", "desc": "Coca-Cola, Fanta, Schweppes" },
+        "juices": { "name": "Drinks", "desc": "Coca-Cola, Fanta, Schweppes" },
         "water": { "name": "Still Water", "desc": "" }
       },
       "custom": {
         "rolled_pie": {
-          "name": "Rolled Pie",
+          "name": "Rolled Pie / Banica",
           "desc": "Meat/cheese/pizza/spinach/cheese & spinach"
         },
         "family_pizza": {
