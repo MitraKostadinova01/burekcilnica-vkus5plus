@@ -6,6 +6,9 @@ import Footer from "./components/Footer/Footer";
 import Map from "./components/Map/Map";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function App() {
   return (
     <Router>
