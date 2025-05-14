@@ -73,6 +73,33 @@ const About = () => {
             </div>
           </div>
         </section>
+        <section className="video-section">
+          <h2 className="section-title" style={{ display: "flex" }}>
+            {t("about.video.title")}
+          </h2>
+          <div className="video-container">
+            <video
+              className="portrait-video"
+              controls
+              playsInline
+              muted
+              controlsList="nodownload"
+              onContextMenu={(e) => e.preventDefault()}
+              ref={(el) => {
+                if (el) {
+                  el.volume = 0; // Force volume to 0
+                  el.addEventListener("volumechange", () => {
+                    el.muted = true;
+                    el.volume = 0;
+                  });
+                }
+              }}
+            >
+              <source src="/videos/IMG_8164.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
         <br />
       </div>
     </div>

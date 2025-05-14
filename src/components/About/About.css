@@ -180,3 +180,24 @@
     border-radius: 10px;
   }
 }
+
+.video-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.video-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.portrait-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  background-color: #000;
+}
