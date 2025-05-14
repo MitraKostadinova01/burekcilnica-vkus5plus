@@ -29,54 +29,66 @@ const VideoCarousel = () => {
   return (
     <section className="video-section">
       <h2 className="section-title" style={{ display: "flex" }}>
-        {t("about.video.title")}
+        {t("about.video.section-title")}
       </h2>
       <div className="video-container">
         <Slider {...settings}>
           <div className="video-slide">
-            <video
-              className="portrait-video"
-              controls
-              playsInline
-              muted
-              controlsList="nodownload"
-              onContextMenu={(e) => e.preventDefault()}
-              ref={(el) => {
-                if (el) {
-                  el.volume = 0; // Force volume to 0
-                  el.addEventListener("volumechange", () => {
-                    el.muted = true;
-                    el.volume = 0;
-                  });
-                }
-              }}
-            >
-              <source src="/videos/IMG_8164.mp4" type="video/mp4" />
-              <source src="/videos/slave.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="video-wrapper">
+              <video
+                className="portrait-video"
+                controls
+                playsInline
+                muted
+                controlsList="nodownload"
+                poster="/images/IMG_6853.jpg"
+                onContextMenu={(e) => e.preventDefault()}
+                ref={(el) => {
+                  if (el) {
+                    el.volume = 0; // Force volume to 0
+                    el.addEventListener("volumechange", () => {
+                      el.muted = true;
+                      el.volume = 0;
+                    });
+                  }
+                }}
+              >
+                <source src="/videos/IMG_8164.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="video-label">
+                {" "}
+                {t("about.video.video-desc-01")}
+              </div>
+            </div>
           </div>
           <div className="video-slide">
-            <video
-              className="portrait-video"
-              controls
-              playsInline
-              muted
-              controlsList="nodownload"
-              onContextMenu={(e) => e.preventDefault()}
-              ref={(el) => {
-                if (el) {
-                  el.volume = 0;
-                  el.addEventListener("volumechange", () => {
-                    el.muted = true;
+            <div className="video-wrapper">
+              <video
+                className="portrait-video"
+                controls
+                playsInline
+                muted
+                controlsList="nodownload"
+                poster="/images/IMG_6852.jpeg"
+                onContextMenu={(e) => e.preventDefault()}
+                ref={(el) => {
+                  if (el) {
                     el.volume = 0;
-                  });
-                }
-              }}
-            >
-              <source src="/videos/slave.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+                    el.addEventListener("volumechange", () => {
+                      el.muted = true;
+                      el.volume = 0;
+                    });
+                  }
+                }}
+              >
+                <source src="/videos/slave.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="video-label">
+                {t("about.video.video-desc-02")}
+              </div>
+            </div>
           </div>
         </Slider>
       </div>

@@ -109,7 +109,9 @@
       }
     },
     "video": {
-      "title": "Video Stories"
+      "section-title": "Video Stories",
+      "video-desc-01": "Pizza Burek Slices",
+      "video-desc-02": "Third generation of burek bakers"
     }
   },
   "footer": {
