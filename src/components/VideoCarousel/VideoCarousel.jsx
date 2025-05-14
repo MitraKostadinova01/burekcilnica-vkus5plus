@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import "./VideoCarousel.css";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const VideoCarousel = () => {
   const { t } = useTranslation();
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
     dots: true,
@@ -14,7 +16,6 @@ const VideoCarousel = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
-    beforeChange: (current, next) => setCurrentSlide(next),
     responsive: [
       {
         breakpoint: 768,
